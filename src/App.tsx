@@ -38,6 +38,7 @@ import DoctorPage from "./pages/DoctorPage";
 import PatientPage from "./pages/PatientPage";
 import VirtualDoctorPage from "./pages/VirtualDoctorPage";
 import VideoPage from "./pages/VideoPage";
+import ReferencesPage from "./pages/ReferencesPage";
 
 const queryClient = new QueryClient();
 
@@ -80,6 +81,8 @@ const App = () => (
               <Route path="/sos" element={<SOSPage />} />
               <Route path="/virtual-doctor" element={<VirtualDoctorPage />} />
               <Route path="/video" element={<VideoPage />} />
+              <Route path="/ref" element={<ReferencesPage />} />
+              <Route path="/references" element={<ReferencesPage />} />
               <Route path="/ai-test" element={<SimpleAITest />} />
               <Route path="/tools/eye-control" element={<EyeControlPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

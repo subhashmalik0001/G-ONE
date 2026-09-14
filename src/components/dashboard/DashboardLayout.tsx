@@ -5,7 +5,7 @@ import {
     BarChart3, ChevronLeft, Zap, LogOut, Menu,
     ChevronRight, Sparkles, Command, Plus, Bell,
     Search, FolderIcon, Calendar, Heart, Pill, SearchIcon,
-    Stethoscope, Activity, ShieldAlert, Check, Video
+    Stethoscope, Activity, ShieldAlert, Check, Video, BookOpen
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import AIChat from "@/components/dashboard/AIChat";
@@ -20,6 +20,7 @@ interface NavItem {
 const patientNavigation: NavItem[] = [
     { href: "/", label: "Dashboard", icon: LayoutDashboard },
     { href: "/video", label: "Video Demo & Pitch", icon: Video, badge: "Watch" },
+    { href: "/ref", label: "Evidence & References", icon: BookOpen, badge: "Hub" },
     { href: "/health/symptom-checker", label: "AI Symptom Checker", icon: Stethoscope, badge: "AI" },
     { href: "/health/emg", label: "EMG Muscle Monitor", icon: Activity, badge: "Live" },
     { href: "/health-records", label: "Medical Records", icon: FolderIcon },
@@ -32,6 +33,7 @@ const patientNavigation: NavItem[] = [
 const doctorNavigation: NavItem[] = [
     { href: "/doctor", label: "Doctor Dashboard", icon: LayoutDashboard },
     { href: "/video", label: "Video Demo & Pitch", icon: Video, badge: "HD" },
+    { href: "/ref", label: "Evidence & References", icon: BookOpen, badge: "Hub" },
     { href: "/doctor#queue", label: "Live Patient Queue", icon: Users, badge: "4 Wait" },
     { href: "/health/lab-analysis", label: "Lab Document Analysis", icon: FolderIcon, badge: "AI" },
     { href: "/health/emg", label: "Clinical EMG Sessions", icon: Activity },
